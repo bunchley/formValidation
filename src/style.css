@@ -1,3 +1,44 @@
 body {
   background-color: burlywood;
+  color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
+  background-color: black;
+}
+#content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "left right";
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.form-container {
+  grid-area: left;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.image-container {
+  grid-area: right;
+  /* justify-content: center;
+  align-items: center; */
+  /* height: 300px;
+  width: auto; */
+}
+.validation-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.invalid {
+  border: 2px solid red;
+}
+.valid {
+  border: 2px solid green;
 }

@@ -6,6 +6,53 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="content"></div>
+    <div id="content">
+      <div class="form-container">
+        <div class="form-header">
+          <h1>Form Validation</h1>
+          <p>Fill in the form below to create an account.</p>
+        </div>
+        <div class="form-body">
+          <form class="validation-form" action="" novalidate>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <span class="error-message" id="email-error"></span></br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" minlength="8" maxlength="20" required />
+            <span class="error-message" id="password-error"></span></br>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            minlength="8"
+            maxlength="20"
+            required
+            />
+            <span class="error-message" id="confirm-password-error"></span></br>
+
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="">Select a country</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              <option value="UK">UK</option>
+            </select>
+            <span class="error-message" id="country-error"></span></br>
+            <label for="postcode">Postal Code</label>
+            <input type="text" id="postcode" name="postcode" required />
+            <span class="error-message" id="postcode-error"></span></br>
+            <div class="form-footer">
+              <button type="submit" class="submit-button">Submit</button>
+              <button type="reset" class="reset-button">Reset</button>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+      <div class="image-container">
+      </div>
   </body>
 </html>
